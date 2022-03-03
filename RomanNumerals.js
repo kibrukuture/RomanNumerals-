@@ -1,8 +1,6 @@
 
 
-const RomanNumerals = {
-
-  //to roman num
+const RomanNumerals = { 
   toRoman: function (intValue) {
 
     //int value is between one and 4000(excluded).
@@ -81,18 +79,16 @@ const RomanNumerals = {
         romValue[i + 1] === "X" ||
         romValue[i + 1] === "V"
       ) {
-        //if (num === "M") data["m"] += 1;
-        //if (num === "D") data['d'] += 1;
         if (num === "C" && (romValue[i + 1] === "M" || romValue[i + 1] === "D")) return -100;
-        //if (num === "L") return -50;
         if (num === 'X' && (romValue[i + 1] === "C" || romValue[i + 1] === "L")) return -10;
-        if (num === "I") return -1
+        if (num === "I") return -1;
       }
       if (num === "M") return 1000;
       if (num === "D") return 500;
       if (num === "C") return 100;
       if (num === "L") return 50;
       if (num === 'X') return 10;
+      if(num==="V") return 5;
       if (num === "I") return 1;
 
 
@@ -105,6 +101,12 @@ const RomanNumerals = {
     });
   }
 }
+
+
+
+
  
+console.log(RomanNumerals.fromRoman("IV"));
+
 
 

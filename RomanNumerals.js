@@ -17,13 +17,13 @@ const RomanNumerals = {
         //
 
         if (num === 900) return "CM";
-        return "L" + "C".repeat(num / 100 - 5);
+        return "D" + "C".repeat(num / 100 - 5);
 
 
       } else if (num >= 100) {
 
 
-        if (num === 400) return "CL"
+        if (num === 400) return "CD"
         return "C".repeat(num / 100);
 
       } else if (num >= 50) {

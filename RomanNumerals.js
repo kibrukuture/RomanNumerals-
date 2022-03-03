@@ -105,11 +105,6 @@ const RomanNumerals = {
     });
   }
 }
-
-
-
-
  
-console.log(RomanNumerals.toRoman(1990));
 
 
